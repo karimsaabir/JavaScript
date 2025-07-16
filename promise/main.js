@@ -3,7 +3,7 @@ function tijaabo() {
     setTimeout(() => {
       const success = true;
       if (success) {
-        guul({ id: 1, name: "Sabir", age: 25 });
+        guul({ id: 1, name: "Ali", age: 25 });
       } else {
         guuldaro("Error ayaa kuheesto");
       }
