@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .valid {
+        border: 2px solid green;
+    }
+    .invalid {
+        border: 2px solid red;
+    }
+</style>
+</head>
+
+<body>
+    <form id="registrationForm"> 
+    <label for="username">Username:</label>
+    <input  type="text" id="username" name="username"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+    <button type="submit">Register</button>
+</form>
+
+<p id="error" style="color: red;"></p>
+<p id="success" style="color: green;"></p>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
