@@ -62,3 +62,19 @@ button:hover{
 .list button{
     margin-left: 5px;
 }
+/* button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button i {
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+button:hover i {
+  color: #d33;
+} */
