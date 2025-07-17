@@ -38,9 +38,7 @@ function organic(task) {
   li.dataset.id = task.id;
 
   li.innerHTML = `
-    <input type="checkbox" class="complete-checkbox" ${
-      task.completed ? "checked" : ""
-    }>
+    <input type="checkbox" class="complete-checkbox" ${task.completed ? "checked" : ""}>
     <span class="task">${task.text}</span>
     <button class="edit-btn" title="Edit"><i class="fas fa-edit"></i></button>
     <button class="delete-btn" title="Delete"><i class="fas fa-trash-alt"></i></button>
@@ -50,12 +48,13 @@ function organic(task) {
   attachEventListerner(li, task);
 }
 
+
 function attachEventListerner(li, task) {
   const deletebtn = li.querySelector(".delete-btn");
   const editbtn = li.querySelector(".edit-btn");
   const checkbox = li.querySelector(".complete-checkbox");
 
-  deletebtn.addEventListener("click", function () {
+  deletebtn.addEventListener("click", function () {   
     handleDelete(task.id, li);
   });
 
